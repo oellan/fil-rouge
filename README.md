@@ -53,7 +53,7 @@ nano .env
 
 Edit `.env` and put your own information. If your database isn't named `buzzy`, change it in the following SQL script.
 
-```mariadb
+```sql
 DROP DATABASE IF EXISTS buzzy;
 
 CREATE DATABASE `buzzy`
