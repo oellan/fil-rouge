@@ -1,0 +1,50 @@
+{% extends "base.html.twig" %}
+
+{% block page_title %}Buzzy - Register{% endblock %}
+
+{% block body %}
+    <main>
+        <div id="form:register">
+            <h1><a href="/"><i class="mdi mdi-arrow-left"></i></a>&nbsp;Buzzy - Register</h1>
+            <form action="/register"
+                  method="post">
+                {% if error is defined %}
+                    <div class="banner:error">{{ error }}</div>
+                {% endif %}
+                <div class="form:field">
+                    <label for="form:register:username">Username</label>
+                    <input type="text"
+                           name="username"
+                           id="form:register:username"
+                           required>
+                </div>
+                <div class="form:field">
+                    <label for="form:register:email">Email</label>
+                    <input type="email"
+                           name="email"
+                           id="form:register:email"
+                           required>
+                </div>
+                <div class="form:field">
+                    <label for="form:register:password">Password</label>
+                    <input type="password"
+                           name="password"
+                           id="form:register:password"
+                           required>
+                </div>
+                <div class="form:field">
+                    <label for="form:register:confirm_password">Confirm your password</label>
+                    <input type="password"
+                           name="confirm_password"
+                           id="form:register:confirm_password"
+                           required>
+                </div>
+                <input type="submit"
+                       value="Register">
+            </form>
+        </div>
+    </main>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

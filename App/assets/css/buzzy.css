@@ -1,0 +1,113 @@
+html {
+    font-family : Inter, sans-serif;
+}
+
+a,
+a:visited,
+a:hover {
+    color           : inherit;
+    text-decoration : none;
+}
+
+nav {
+    display   : flex;
+    max-width : 1024px;
+    color     : white;
+    margin    : 0 auto;
+    font-size : 1.25em;
+    padding   : .5em 0;
+}
+
+main {
+    display         : flex;
+    flex-direction  : column;
+    min-height      : 100vh;
+    justify-content : center;
+    align-items     : center;
+}
+
+#form\:login,
+#form\:register {
+
+    box-shadow    : 0 1px 1px rgba(0, 0, 0, .11),
+    0 2px 2px rgba(0, 0, 0, .11),
+    0 4px 4px rgba(0, 0, 0, .11),
+    0 6px 8px rgba(0, 0, 0, .11),
+    0 8px 16px rgba(0, 0, 0, .11);
+    padding       : 2em;
+    width         : calc(90vw - 4em);
+    max-width     : 500px;
+    border-radius : .25rem;
+}
+
+#form\:login h1,
+#form\:register h1 {
+    margin-top    : 0;
+    margin-bottom : 1em;
+}
+
+#form\:login input[type=submit],
+#form\:register input[type=submit] {
+
+    background-color : #118AB2;
+    font-size        : 1.5em;
+    display          : block;
+    width            : 100%;
+    color            : white;
+    padding          : .75rem;
+    border-radius    : .25rem;
+    border           : 0;
+}
+
+.form\:field {
+    display        : flex;
+    flex-direction : column;
+    margin-bottom  : 1rem;
+}
+
+#form\:login input:not([type=submit]),
+#form\:register input:not([type=submit]) {
+    margin-top       : .2rem;
+    background-color : transparent;
+    color            : black;
+    border           : 0;
+    border-left      : 2px black solid;
+    padding          : .2em 0 .2em .75em;
+    outline          : 0;
+}
+
+.banner\:error {
+
+    margin-bottom    : 1.5em;
+    color            : white;
+    background-color : #D62828;
+    padding          : 1em 1.5em;
+    border-radius    : .25em;
+    font-weight      : bold;
+}
+
+.bg\:blue {
+
+    background-color : #118AB2;
+}
+
+nav a {
+    padding     : .25em .5em;
+    margin-right : .5em;
+}
+
+nav .nav\:button {
+    border           : 1px white solid;
+    border-radius    : .2em;
+    background-color : rgba(0, 0, 0, 0);
+    transition: background-color .2s ease-in-out;
+}
+
+nav .nav\:button:hover,
+nav .nav\:button:focus {
+    background-color : rgba(0, 0, 0, .05);
+}
+
+.flex\:to-right {
+    margin-right: auto;
+}

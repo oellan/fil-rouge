@@ -1,0 +1,29 @@
+{
+    "name": "iim/buzzy",
+    "description": "description",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Arthur TESSE",
+            "email": "arthur.tesse@edu.devinci.fr"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.2",
+        "php": ">=7.4",
+        "ext-pdo": "*",
+        "ext-json": "*",
+        "ext-sodium": "*",
+        "twig/twig": "^3.1"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App",
+            "BadBox\\": "BadBox"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{% extends "base.html.twig" %}
+
+{% block page_title %}Buzzy - Login{% endblock %}
+
+{% block body %}
+    <main>
+        <div id="form:login">
+            <h1><a href="/"><i class="mdi mdi-arrow-left"></i></a>&nbsp;Buzzy - Login</h1>
+            <form action="/login"
+                  method="post">
+                {% if error is defined %}
+                    <div class="banner:error">{{ error }}</div>
+                {% endif %}
+                <div class="form:field">
+                    <label for="form:login:username">Username</label>
+                    <input type="text"
+                           name="username"
+                           id="form:login:username"
+                           required>
+                </div>
+                <div class="form:field">
+                    <label for="form:login:password">Password</label>
+                    <input type="password"
+                           name="password"
+                           id="form:login:password"
+                           required>
+                </div>
+                <input type="submit"
+                       value="Log In">
+            </form>
+        </div>
+    </main>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
